@@ -1,0 +1,37 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 800px;
+    margin: 100px auto;
+}
+td, th{
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+tr:nth-child(even){
+    background-color: rgb(205, 231, 241);
+}
+/* Si fuera  todas las columnas despues de la 3 seria td:nth-child(n + 3), th:nth-child(n+3)*/
+td:nth-child(3), th:nth-child(3){
+    text-align: center;
+}
+td:nth-child(4), th:nth-child(4){
+    text-align: center;
+}
+td:nth-child(5), th:nth-child(5){
+    text-align: center;
+}
+tbody tr:hover{
+    background-color: aquamarine;
+}
+thead{
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+}
